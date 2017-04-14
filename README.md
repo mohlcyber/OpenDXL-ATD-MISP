@@ -38,7 +38,7 @@ Change the CONFIG_FILE path in the atd_subscriber.py file
 `CONFIG_FILE = "/path/to/config/file"`
 
 ### misp.py
-The misp.py script receives the JSON messages and parses information and uses the Python API from MISP to create a new threat event as well as adding atributes parsed out of the ATD DXL message.
+The misp.py script receives the JSON messages and parses IOCs and uses the Python API from MISP (PyMISP) to create a new threat event, add atributes and asign a tag.
 
 Change the misp_url and misp_key
 
