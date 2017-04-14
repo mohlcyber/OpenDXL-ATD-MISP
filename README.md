@@ -31,21 +31,19 @@ McAfee ATD solution (tested with ATD 3.8)
 McAfee ATD receives files from multiple sensors like Endpoints, Web Gateways, Network IPS or via Rest API. ATD will perform malware analytics and produce local threat intelligence. After an analysis every indicator of comprise will be published via the Data Exchange Layer (topic: /mcafee/event/atd/file/report).
 
 ### atd_subscriber.py
-
-The atd_subscriber is an OpenDXL script that receives DXL messages from ATD, prepares the JSON and loads misp.py
+The atd_subscriber.py receives DXL messages from ATD, prepares the JSON and loads misp.py.
 
 Change the CONFIG_FILE path in the atd_subscriber.py file
 
 `CONFIG_FILE = "/path/to/config/file"`
 
 ### misp.py
-
 The misp.py script receives the JSON messages and parses information and uses the Python API from MISP to create a new threat event as well as adding atributes parsed out of the ATD DXL message.
 
 Change the misp_url and misp_key
-`misp_url = 'https://misp-url.com/' 
+`misp_url = 'https://misp-url.com/`
 
-misp_key = 'auth-key'`
+`misp_key = 'auth-key'`
 
 The MISP auth key can be found under the automation section in MISP.
 
