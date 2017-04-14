@@ -67,4 +67,4 @@ MISP is able to combine global, community and locally produced intelligence.
 
 ![2_atd_misp](https://cloud.githubusercontent.com/assets/25227268/25057844/d5ded02a-2173-11e7-914d-422329a1bb51.PNG)
 
-
+![3_atd_misp](https://cloud.githubusercontent.com/assets/25227268/25057877/260102da-2174-11e7-91a1-37e3a9feca09.PNG)
