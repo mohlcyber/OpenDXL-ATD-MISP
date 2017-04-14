@@ -34,3 +34,7 @@ McAfee ATD receives files from multiple sensors like Endpoints, Web Gateways, Ne
 or
 ```nohup python atd_subscriber.py &```
 
+Change the CONFIG_FILE path in the atd_subscriber.py file
+
+`CONFIG_FILE = "/path/to/config/file"`
+
