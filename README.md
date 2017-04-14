@@ -15,6 +15,9 @@ https://www.mcafee.com/in/products/advanced-threat-defense.aspx
 https://github.com/MISP/MISP
 
 ## Prerequisites
-Installed MISP platform
+MISP platform installation ([Link](https://github.com/MISP/MISP))
 
-Python SDK installation ([Link]https://opendxl.github.io/opendxl-client-python/pydoc/installation.html)
+OpenDXL Python SDK installation ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/installation.html))
+
+McAfee ATD solution
+
