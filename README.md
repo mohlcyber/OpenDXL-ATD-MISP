@@ -50,7 +50,7 @@ The MISP auth key can be found under the automation section in MISP.
 
 
 ## Run the OpenDXL wrapper
-![python atd_subscriber.py]
+> python atd_subscriber.py
 or
-`nohup python atd_subscriber.py &`
+> nohup python atd_subscriber.py &
 
