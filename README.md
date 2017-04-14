@@ -36,5 +36,5 @@ or
 
 Change the CONFIG_FILE path in the atd_subscriber.py file
 
-`CONFIG_FILE = "/path/to/config/file"`
+20 `CONFIG_FILE = "/path/to/config/file"`
 
