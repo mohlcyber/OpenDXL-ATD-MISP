@@ -8,5 +8,12 @@ An OpenDXL wrapper will subscribe and parse indicators ATD produced and will imp
 
 # Component Description
 
-McAfee Advanced Threat Defense (ATD) is a malware analytics solution combining signatures and behavioral analysis techniques to rapidly identify malicious content and provides the local threat intelligence for our solution. ATD exports IOC data in STIX format in several ways including the DXL.
-The MISP threat sharing platform is free and open source software helping information sharing of threat and cyber security indicators
+**McAfee Advanced Threat Defense (ATD)** is a malware analytics solution combining signatures and behavioral analysis techniques to rapidly identify malicious content and provides the local threat intelligence for our solution. ATD exports IOC data in STIX format in several ways including the DXL.
+https://www.mcafee.com/in/products/advanced-threat-defense.aspx
+
+**MISP** threat sharing platform is free and open source software helping information sharing of threat and cyber security indicators.
+https://github.com/MISP/MISP
+
+# Prerequisites
+Installed MISP platform
+Python SDK installation ([Link]https://opendxl.github.io/opendxl-client-python/pydoc/installation.html)
