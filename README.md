@@ -15,9 +15,13 @@ https://www.mcafee.com/in/products/advanced-threat-defense.aspx
 https://github.com/MISP/MISP
 
 ## Prerequisites
-MISP platform installation ([Link](https://github.com/MISP/MISP))
+MISP platform installation ([Link](https://github.com/MISP/MISP)) (tested with MISP 
 
-OpenDXL Python SDK installation ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/installation.html))
+OpenDXL Python installation
+1. Python SDK Installation ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/installation.html))
+2. Certificate Files Creation ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/certcreation.html))
+3. ePO Certificate Authority (CA) Import ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/epocaimport.html))
+4. ePO Broker Certificates Export ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/epobrokercertsexport.html))
 
 McAfee ATD solution
 
