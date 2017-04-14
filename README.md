@@ -17,7 +17,7 @@ https://github.com/MISP/MISP
 ## Prerequisites
 MISP platform installation ([Link](https://github.com/MISP/MISP)) (tested with MISP 2.4.70)
 
-PyMISP Library installation ([Link](https://github.com/CIRCL/PyMISP))
+PyMISP library installation ([Link](https://github.com/CIRCL/PyMISP))
 
 OpenDXL Python installation
 1. Python SDK Installation ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/installation.html))
