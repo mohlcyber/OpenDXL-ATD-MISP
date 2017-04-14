@@ -61,3 +61,6 @@ or
 
 > nohup python atd_subscriber.py &
 
+## Summary
+With this use case, ATD produces local intelligence and contributes information to an intelligence management platform like MISP.
+
