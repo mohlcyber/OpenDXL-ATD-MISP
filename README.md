@@ -15,7 +15,9 @@ https://www.mcafee.com/in/products/advanced-threat-defense.aspx
 https://github.com/MISP/MISP
 
 ## Prerequisites
-MISP platform installation ([Link](https://github.com/MISP/MISP)) (tested with MISP 
+MISP platform installation ([Link](https://github.com/MISP/MISP)) (tested with MISP 2.4.70)
+
+PyMISP Library installation ([Link](https://github.com/CIRCL/PyMISP))
 
 OpenDXL Python installation
 1. Python SDK Installation ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/installation.html))
@@ -23,5 +25,12 @@ OpenDXL Python installation
 3. ePO Certificate Authority (CA) Import ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/epocaimport.html))
 4. ePO Broker Certificates Export ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/epobrokercertsexport.html))
 
-McAfee ATD solution
+McAfee ATD solution (tested with ATD 3.8)
+
+## Configuration
+McAfee ATD receives files from multiple sensors like Endpoints, Web Gateways, Network IPS or via Rest API. ATD will perform malware analytics and produce local threat intelligence. After an analysis every indicator of comprise will be published via the Data Exchange Layer (topic: /mcafee/event/atd/file/report).
+
+```python atd_subscriber.py```
+or
+```nohup python atd_subscriber.py &```
 
