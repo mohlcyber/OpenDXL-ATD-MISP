@@ -30,11 +30,11 @@ McAfee ATD solution (tested with ATD 3.8)
 ## Configuration
 McAfee ATD receives files from multiple sensors like Endpoints, Web Gateways, Network IPS or via Rest API. ATD will perform malware analytics and produce local threat intelligence. After an analysis every indicator of comprise will be published via the Data Exchange Layer (topic: /mcafee/event/atd/file/report).
 
-```python atd_subscriber.py```
+`python atd_subscriber.py`
 or
-```nohup python atd_subscriber.py &```
+`nohup python atd_subscriber.py &`
 
 Change the CONFIG_FILE path in the atd_subscriber.py file
 
-20 `CONFIG_FILE = "/path/to/config/file"`
+`CONFIG_FILE = "/path/to/config/file"`
 
