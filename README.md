@@ -64,3 +64,5 @@ or
 ## Summary
 With this use case, ATD produces local intelligence and contributes information to an intelligence management platform like MISP.
 
+![2_atd_misp](https://cloud.githubusercontent.com/assets/25227268/25057844/d5ded02a-2173-11e7-914d-422329a1bb51.PNG)
+
