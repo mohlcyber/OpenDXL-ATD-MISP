@@ -47,7 +47,11 @@ Change the misp_url and misp_key
 
 The MISP auth key can be found under the automation section in MISP.
 
+Change the tag assignment in line 133
 
+`misp.add_tag(event, str("ATD:Report"))`
+
+Make sure that you added the tag in MISP already.
 
 ## Run the OpenDXL wrapper
 > python atd_subscriber.py
