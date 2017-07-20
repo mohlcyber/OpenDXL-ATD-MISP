@@ -22,7 +22,7 @@ Download the [Latest Release](https://github.com/mohl1/OpenDXL-ATD-MISP/releases
 MISP platform installation ([Link](https://github.com/MISP/MISP)) (tested with MISP 2.4.70)
 
 PyMISP library installation ([Link](https://github.com/CIRCL/PyMISP)) or install dependencies
-using the requirements.txt file as mentioned below
+using the requirements.txt file as mentioned below.
 
 OpenDXL Python installation
 1. Python SDK Installation ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/installation.html))
