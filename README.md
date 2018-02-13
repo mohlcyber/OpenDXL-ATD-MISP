@@ -1,4 +1,5 @@
 # OpenDXL-ATD-MISP
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 This integration is focusing on the automated threat intelligence collection with McAfee ATD, OpenDXL and MISP.
 McAfee Advanced Threat Defense (ATD) will produce local threat intelligence that will be pushed via DXL. 
