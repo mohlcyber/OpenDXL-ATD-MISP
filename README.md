@@ -3,9 +3,9 @@
 
 This integration is focusing on the automated threat intelligence collection with McAfee ATD, OpenDXL and MISP.
 McAfee Advanced Threat Defense (ATD) will produce local threat intelligence that will be pushed via DXL. 
-An OpenDXL wrapper will subscribe and parse indicators ATD produced and will import indicators into a threat intelligence management platform (MISP). 
+An OpenDXL wrapper will subscribe and parse indicators ATD produced and will import indicators into a threat intelligence management platform (MISP). The wrapper will also upload the ATD PDF report and original detonated sample to MISP.
 
-![1_atd_misp](https://cloud.githubusercontent.com/assets/25227268/25056477/5ac507f6-2169-11e7-87a9-87f251b9eab7.PNG)
+PLACEHOLDER PICTURE
 
 ## Component Description
 
@@ -17,13 +17,12 @@ https://github.com/MISP/MISP
 
 ## Prerequisites
 
-Download the [Latest Release](https://github.com/mohl1/OpenDXL-ATD-MISP/releases)
+Download the [Latest Release](https://github.com/mohlcyber/OpenDXL-ATD-MISP/releases)
    * Extract the release .zip file
    
-MISP platform installation ([Link](https://github.com/MISP/MISP)) (tested with MISP 2.4.70)
+MISP platform installation ([Link](https://github.com/MISP/MISP)) (tested with MISP 2.4.92)
 
-PyMISP library installation ([Link](https://github.com/CIRCL/PyMISP)) or install dependencies
-using the requirements.txt file as mentioned below.
+PyMISP library installation ([Link](https://github.com/CIRCL/PyMISP))
 
 OpenDXL Python installation
 1. Python SDK Installation ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/installation.html))
