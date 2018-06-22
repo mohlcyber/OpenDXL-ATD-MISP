@@ -13,7 +13,7 @@ from dxlclient.client_config import DxlClientConfig
 logging.getLogger().setLevel(logging.ERROR)
 logger = logging.getLogger(__name__)
 
-CONFIG_FILE = "path to config dxlclient config file"
+CONFIG_FILE = "path to dxlclient config file"
 config = DxlClientConfig.create_dxl_config_from_file(CONFIG_FILE)
 
 # Variable MISP python
