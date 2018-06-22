@@ -1,23 +1,19 @@
 #!/usr/bin/env python
 
 import logging
-import os
-import sys
 import time
 import json
-import threading
 import importlib
 
 from dxlclient.callbacks import EventCallback
 from dxlclient.client import DxlClient
 from dxlclient.client_config import DxlClientConfig
-from dxlclient.message import Event, Request
 
 # Configure local logger
 logging.getLogger().setLevel(logging.ERROR)
 logger = logging.getLogger(__name__)
 
-CONFIG_FILE = "/path/to/config/file"
+CONFIG_FILE = "/home/mcafee/misp_mar/config/dxlclient.config"
 config = DxlClientConfig.create_dxl_config_from_file(CONFIG_FILE)
 
 # Variable MISP python
@@ -34,16 +30,16 @@ with DxlClient(config) as client:
         def on_event(self, event):
             try:
                 query = event.payload.decode()
-                logger.info("Event received: " + query)
-                
+                print("Event received: " + query)
+
                 query = query[:-3]
                 query = json.loads(query)
-                
+
                 # Push data into MISP
                 servicedxl.action(query)
-               
+
             except Exception as e:
-                print e
+                print(e)
 
         @staticmethod
         def worker_thread(req):
@@ -56,4 +52,3 @@ with DxlClient(config) as client:
     # Wait forever
     while True:
         time.sleep(60)
-
