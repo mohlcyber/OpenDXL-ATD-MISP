@@ -22,20 +22,27 @@ Download the [Latest Release](https://github.com/mohlcyber/OpenDXL-ATD-MISP/rele
    
 MISP platform installation ([Link](https://github.com/MISP/MISP)) (tested with MISP 2.4.92)
 
-PyMISP library installation ([Link](https://github.com/CIRCL/PyMISP))
+Requests ([Link](http://docs.python-requests.org/en/master/user/install/#install))
 
-OpenDXL Python installation
-1. Python SDK Installation ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/installation.html))
-    Install the required dependencies with the requirements.txt file:
-    ```sh
-    $ pip install -r requirements.txt
-    ```
-    This will install the dxlclient, and pymisp modules. 
-2. Certificate Files Creation ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/certcreation.html))
-3. ePO Certificate Authority (CA) Import ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/epocaimport.html))
-4. ePO Broker Certificates Export ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/epobrokercertsexport.html))
+PyMISP library installation ([Link](https://github.com/MISP/PyMISP))
+```sh
+git clone https://github.com/MISP/PyMISP.git
+cd PyMISP/
+python setup.py install
+```
 
-McAfee ATD solution (tested with ATD 3.8)
+OpenDXL SDK ([Link](https://github.com/opendxl/opendxl-client-python))
+```sh
+git clone https://github.com/opendxl/opendxl-client-python.git
+cd opendxl-client-python/
+python setup.py install
+```
+
+Certificate Files Creation ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/epoexternalcertissuance.html)).
+DXL 4.x support a simplyfied way to create certificates.
+([Link](https://github.com/opendxl/opendxl-client-python/blob/master/docs/sdk/basiccliprovisioning.rst)
+
+McAfee ATD solution (tested with ATD 4.4)
 
 ## Configuration
 McAfee ATD receives files from multiple sensors like Endpoints, Web Gateways, Network IPS or via Rest API. ATD will perform malware analytics and produce local threat intelligence. After an analysis every indicator of comprise will be published via the Data Exchange Layer (topic: /mcafee/event/atd/file/report).
@@ -50,19 +57,17 @@ Change the CONFIG_FILE path in the atd_subscriber.py file
 ### misp.py
 The misp.py script receives the JSON messages and parses IOCs and uses the Python API from MISP (PyMISP) to create a new threat event, add atributes and asign a tag.
 
-Change the misp_url and misp_key
+Change the following information
 
-`misp_url = 'https://misp-url.com/`
-
-`misp_key = 'auth-key'`
+<img width="305" alt="screen shot 2018-06-22 at 17 54 39" src="https://user-images.githubusercontent.com/25227268/41786272-62ace20e-7645-11e8-9265-885be035124a.png">
 
 The MISP auth key can be found under the automation section in MISP.
 
-Change the tag assignment in line 133
+Change the tag assignment in line 185
 
 `misp.add_tag(event, str("ATD:Report"))`
 
-Make sure that you added the tag in MISP already.
+Make sure that you added the tag in MISP.
 
 ## Run the OpenDXL wrapper
 > python atd_subscriber.py
@@ -73,7 +78,7 @@ or
 
 ## Summary
 With this use case, ATD produces local intelligence and contributes information to an intelligence management platform like MISP.
-MISP is able to combine global, community and locally produced intelligence.
+MISP is able to aggregate global, community and locally produced intelligence.
 
 ![2_atd_misp](https://cloud.githubusercontent.com/assets/25227268/25057844/d5ded02a-2173-11e7-914d-422329a1bb51.PNG)
 
