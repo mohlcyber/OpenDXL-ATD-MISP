@@ -40,7 +40,7 @@ python setup.py install
 
 Certificate Files Creation ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/epoexternalcertissuance.html)).
 DXL 4.x support a simplyfied way to create certificates.
-([Link](https://github.com/opendxl/opendxl-client-python/blob/master/docs/sdk/basiccliprovisioning.rst)
+([Link](https://github.com/opendxl/opendxl-client-python/blob/master/docs/sdk/basiccliprovisioning.rst))
 
 McAfee ATD solution (tested with ATD 4.4)
 
