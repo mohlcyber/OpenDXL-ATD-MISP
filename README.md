@@ -39,8 +39,8 @@ python setup.py install
 ```
 
 Certificate Files Creation ([Link](https://opendxl.github.io/opendxl-client-python/pydoc/epoexternalcertissuance.html)).
-DXL 4.x support a simplyfied way to create certificates.
-([Link](https://github.com/opendxl/opendxl-client-python/blob/master/docs/sdk/basiccliprovisioning.rst))
+DXL 4.x support a simplyfied way to create certificates
+([Link](https://github.com/opendxl/opendxl-client-python/blob/master/docs/sdk/basiccliprovisioning.rst)).
 
 McAfee ATD solution (tested with ATD 4.4)
 
@@ -50,7 +50,7 @@ McAfee ATD receives files from multiple sensors like Endpoints, Web Gateways, Ne
 ### atd_subscriber.py
 The atd_subscriber.py receives DXL messages from ATD, prepares the JSON and loads misp.py.
 
-Change the CONFIG_FILE path in the atd_subscriber.py file
+Change the CONFIG_FILE path in the atd_subscriber.py file.
 
 `CONFIG_FILE = "/path/to/config/file"`
 
@@ -68,6 +68,9 @@ Change the tag assignment in line 185
 `misp.add_tag(event, str("ATD:Report"))`
 
 Make sure that you added the tag in MISP.
+
+The misp.py script will also download the PDF and original detonated sample from ATD and upload it to MISP. 
+Make sure that the ATD user specified in line 18 is authorized to download reports and samples.
 
 ## Run the OpenDXL wrapper
 > python atd_subscriber.py
