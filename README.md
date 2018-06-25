@@ -5,7 +5,7 @@ This integration is focusing on the automated threat intelligence collection wit
 McAfee Advanced Threat Defense (ATD) will produce local threat intelligence that will be pushed via DXL. 
 An OpenDXL wrapper will subscribe and parse indicators ATD produced and will import indicators into a threat intelligence management platform (MISP). The wrapper will also upload the ATD PDF report and original detonated sample to MISP.
 
-PLACEHOLDER PICTURE
+<img width="980" alt="screen shot 2018-06-25 at 08 36 45" src="https://user-images.githubusercontent.com/25227268/41834017-ef1470ea-7852-11e8-9d3d-d210c653e66c.png">
 
 ## Component Description
 
