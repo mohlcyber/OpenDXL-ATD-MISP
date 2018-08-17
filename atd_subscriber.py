@@ -32,7 +32,7 @@ with DxlClient(config) as client:
                 query = event.payload.decode()
                 print("Event received: " + query)
 
-                query = query[:-3]
+                query = query[:query.rfind('}')+1]
                 query = json.loads(query)
 
                 # Push data into MISP
