@@ -58,11 +58,11 @@ The misp.py script will also download the PDF and original detonated sample from
 Make sure that the ATD user specified in line 25 is authorized to download reports and samples.
 
 ## Run the OpenDXL wrapper
-> python atd_misp.py
+> python3 atd_misp.py
 
 or
 
-> nohup atd_misp.py &
+> nohup python3 atd_misp.py &
 
 ## Summary
 With this use case, ATD produces local intelligence and contributes information to an intelligence management platform like MISP.
