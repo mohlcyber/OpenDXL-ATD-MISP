@@ -20,7 +20,7 @@ https://github.com/MISP/MISP
 Download the [Latest Release](https://github.com/mohlcyber/OpenDXL-ATD-MISP/releases)
    * Extract the release .zip file
    
-MISP platform installation ([Link](https://github.com/MISP/MISP)) (tested with MISP 2.4.92)
+MISP platform installation ([Link](https://github.com/MISP/MISP)) (tested with MISP 2.4.116)
 
 Requests ([Link](http://docs.python-requests.org/en/master/user/install/#install))
 
@@ -42,7 +42,7 @@ Certificate Files Creation ([Link](https://opendxl.github.io/opendxl-client-pyth
 DXL 4.x support a simplyfied way to create certificates
 ([Link](https://github.com/opendxl/opendxl-client-python/blob/master/docs/sdk/basiccliprovisioning.rst)).
 
-McAfee ATD solution (tested with ATD 4.4)
+McAfee ATD solution (tested with ATD 4.6.2)
 
 ## Configuration
 McAfee ATD receives files from multiple sensors like Endpoints, Web Gateways, Network IPS or via Rest API. ATD will perform malware analytics and produce local threat intelligence. After an analysis every indicator of comprise will be published via the Data Exchange Layer (topic: /mcafee/event/atd/file/report).
