@@ -1,4 +1,4 @@
-# written by mohlcyber v.1.2
+# written by mohlcyber v.1.3
 
 import sys
 import os
@@ -92,6 +92,7 @@ class MISP():
     def __init__(self, query):
         self.misp = ExpandedPyMISP(misp_url, misp_key, ssl=misp_verify, debug=False)
         self.misp_tag = misp_tag
+        self.tags = self.misp.tags()
         self.query = query
         self.mainfile = query['Summary']['Subject']['Name']
         self.attributes = []
@@ -299,6 +300,17 @@ class MISP():
 
             if uuid is None:
                 print('STATUS: Could not tag the MISP Event. Continuing...')
+
+            #MITRE tags assign to McAfee ATD findings
+            version = self.query['Summary']['SUMversion']
+            version = str(version).replace('.', '')
+            if int(version) >= 46021:
+                mitre_list = self.query['Summary']['Mitre']
+                for val in mitre_list:
+                    mitre_tech = val['Techniques']
+                    for tag in self.tags:
+                        if 'mitre-attack-pattern="{0}'.format(mitre_tech) in tag['name']:
+                            self.misp.tag(uuid, tag['id'])
 
         except Exception as e:
             exc_type, exc_obj, exc_tb = sys.exc_info()
