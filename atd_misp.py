@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # written by mohlcyber v.1.3
 
 import sys
