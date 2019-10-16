@@ -70,4 +70,6 @@ MISP is able to aggregate global, community and locally produced intelligence.
 
 <img width="1440" alt="Screenshot 2019-10-15 at 10 43 25" src="https://user-images.githubusercontent.com/25227268/66815524-b37c8500-ef38-11e9-96f1-86df877e26c9.png">
 
+<img width="1440" alt="Screenshot 2019-10-16 at 12 05 37" src="https://user-images.githubusercontent.com/25227268/66909607-56063800-f00d-11e9-96e2-4916b9e3a0e2.png">
+
 <img width="1440" alt="Screenshot 2019-10-15 at 10 43 42" src="https://user-images.githubusercontent.com/25227268/66815561-c727eb80-ef38-11e9-9139-f4045726cf4b.png">
