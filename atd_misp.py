@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# written by mohlcyber v.1.4 21/02/2020
+# written by mohlcyber v1.4 21/02/2020
 
 import sys
 import os
