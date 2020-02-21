@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# written by mohlcyber v.1.3
+# written by mohlcyber v.0.4 21/02/2020
 
 import sys
 import os
@@ -27,7 +27,6 @@ misp_verify = False
 atd_ip = '2.2.2.2'
 atd_user = '### ATD Username ###'
 atd_pw = '### ATD Password ###'
-atd_profile = '### ATD Profile ID ###'
 atd_verify = False
 
 #DXL Config
@@ -41,7 +40,6 @@ class ATD():
         self.pw = atd_pw
         creds = self.user + ':' + self.pw
         self.creds = base64.b64encode(creds.encode())
-        self.profile = atd_profile
         self.verify = atd_verify
 
         self.sessionsetup()
